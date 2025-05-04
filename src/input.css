@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    /* Thin scrollbar styling */
+    .thin-scrollbar::-webkit-scrollbar {
+        width: 4px;
+        /* Thin width */
+        height: 4px;
+        /* For horizontal scrollbars */
+    }
+
+    .thin-scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-gray-300 rounded-full;
+        /* Scrollbar color */
+    }
+
+    /* Hide scrollbar (but keep functionality) */
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        /* IE/Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+        /* Chrome/Safari/Opera */
+    }
+}
+
+;
+
+
+
